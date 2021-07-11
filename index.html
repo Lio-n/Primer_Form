@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script async src="./script.js"></script>
+  </head>
+  <body>
+    <section>
+      <form class="mi-form">
+        <!-- Part 1° -->
+        <label>
+          <span>Nombre</span>
+          <input class="input-text" type="text" name="nombre" />
+        </label>
+        <!-- Part 2° -->
+        <label>
+          <p>De lo aprendido hasta ahora,¿Qué tema te gustó más?</p>
+          <select class="input-select" name="opciones">
+            <option value="1">Typescript</option>
+            <option value="2">Promesas</option>
+            <option value="3">Clases</option>
+            <option value="4">Funciones</option>
+          </select>
+        </label>
+        <!-- Part 3° -->
+        <label>
+          <p>Preferís estudiar</p>
+          <div class="div-radio">
+            <div>
+              <input type="radio" id="de_dia" name="study-fav" value="1" />
+              <label for="de_dia">De dia</label>
+            </div>
+            <div>
+              <input type="radio" id="de_noche" name="study-fav" value="2" />
+              <label for="de_noche">De noche</label>
+            </div>
+          </div>
+        </label>
+        <!-- Part 4° -->
+        <label>
+          <p>¿Cuales fueron los temas más complejos hasta ahora?</p>
+          <div class="div-checkbox">
+            <input
+              type="checkbox"
+              id="Typescript"
+              name="temaComplejo"
+              value="1"
+            />
+            <label for="Typescript">Typescript</label>
+          </div>
+          <div class="div-checkbox">
+            <input
+              type="checkbox"
+              id="Promesas"
+              name="temaComplejo"
+              value="2"
+            />
+            <label for="Promesas">Promesas</label>
+          </div>
+          <div class="div-checkbox">
+            <input type="checkbox" id="Clases" name="temaComplejo" value="3" />
+            <label for="Clases">Clases</label>
+          </div>
+          <div class="div-checkbox">
+            <input
+              type="checkbox"
+              id="Funciones"
+              name="temaComplejo"
+              value="4"
+            />
+            <label for="Funciones">Funciones</label>
+          </div>
+        </label>
+        <div>
+          <button>Enviar</button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
